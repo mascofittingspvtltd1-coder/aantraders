@@ -1,77 +1,105 @@
-Create a clean, modern, premium single-page business website for "AAN Traders", an industrial supply company based in Mumbai, India.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AAN Traders | Industrial Supply Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        .text-blue-brand { color: #1877F2; }
+        .bg-blue-brand { background-color: #1877F2; }
+        .accent-orange { color: #FF8C00; }
+        .card:hover { transform: translateY(-5px); transition: all 0.3s ease; shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); }
+    </style>
+</head>
+<body class="bg-white text-gray-900">
 
-DESIGN:
-- Pure white background (no dark overlay)
-- Corporate look (clean, not heavy industrial)
-- Colors: Blue (#1877F2) with light orange accents
-- Large, bold, highly readable fonts
-- Smooth scrolling single-page layout
+    <!-- HEADER -->
+    <header class="fixed w-full bg-white/90 backdrop-blur-md z-50 border-b border-gray-100">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-extrabold tracking-tighter text-blue-brand">AAN TRADERS</h1>
+            <nav class="hidden md:flex space-x-8 font-semibold text-sm uppercase tracking-wider">
+                <a href="#home" class="hover:text-blue-brand">Home</a>
+                <a href="#about" class="hover:text-blue-brand">About</a>
+                <a href="#products" class="hover:text-blue-brand">Products</a>
+                <a href="#contact" class="hover:text-blue-brand">Contact</a>
+            </nav>
+            <a href="tel:+919820828306" class="bg-blue-brand text-white px-6 py-2 rounded font-bold text-sm hover:bg-blue-700 transition">GET A QUOTE</a>
+        </div>
+    </header>
 
-HEADER:
-- Left: Big logo text "AAN TRADERS"
-- Right menu: Home | About | Products | Industries | Clients | Contact
-- Button: "Get a Quote"
+    <!-- HERO SECTION -->
+    <section id="home" class="pt-32 pb-20 px-6">
+        <div class="container mx-auto max-w-5xl">
+            <p class="text-blue-brand font-bold tracking-widest mb-4">MUMBAI, INDIA</p>
+            <h2 class="text-6xl md:text-7xl font-extrabold leading-none mb-8">Industrial Supply <br>Solutions <span class="text-blue-brand">You Can Rely On.</span></h2>
+            <p class="text-xl text-gray-600 max-w-2xl mb-10 leading-relaxed">
+                Aan Traders is a trusted industrial trading and supply company serving major petrochemical, oil & gas, power, and manufacturing industries across India and international markets.
+            </p>
+            <div class="border-l-4 border-orange-400 pl-6 py-2 italic text-lg text-gray-500">
+                "Trusted Industrial Partner of Leading Industries Worldwide"
+            </div>
+        </div>
+    </section>
 
-HERO SECTION:
-Text (big, left aligned):
+    <!-- ABOUT SECTION -->
+    <section id="about" class="bg-gray-50 py-20 px-6">
+        <div class="container mx-auto max-w-5xl">
+            <div class="grid md:grid-cols-3 gap-12 text-center">
+                <div>
+                    <h3 class="text-4xl font-extrabold text-blue-brand mb-2">10+</h3>
+                    <p class="font-semibold text-gray-500 uppercase text-sm">Years Experience</p>
+                </div>
+                <div>
+                    <h3 class="text-4xl font-extrabold text-blue-brand mb-2">9000+</h3>
+                    <p class="font-semibold text-gray-500 uppercase text-sm">Products Supplied</p>
+                </div>
+                <div>
+                    <h3 class="text-4xl font-extrabold text-blue-brand mb-2">Global</h3>
+                    <p class="font-semibold text-gray-500 uppercase text-sm">India, Middle East, Europe</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-"Mumbai, India  
-Industrial Supply Solutions  
-You Can Rely On  
+    <!-- PRODUCTS GRID -->
+    <section id="products" class="py-24 px-6">
+        <div class="container mx-auto max-w-6xl">
+            <h2 class="text-3xl font-extrabold mb-12 text-center underline decoration-blue-brand decoration-4 underline-offset-8">OUR PRODUCTS</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="card border p-8 text-center font-bold text-lg rounded-xl">Pipes & Tubes</div>
+                <div class="card border p-8 text-center font-bold text-lg rounded-xl">Pipe Fittings</div>
+                <div class="card border p-8 text-center font-bold text-lg rounded-xl">Flanges</div>
+                <div class="card border p-8 text-center font-bold text-lg rounded-xl">Valves</div>
+                <div class="card border p-8 text-center font-bold text-lg rounded-xl">Fasteners</div>
+                <div class="card border p-8 text-center font-bold text-lg rounded-xl">Industrial Tools</div>
+                <div class="card border p-8 text-center font-bold text-lg rounded-xl">Safety Equipment</div>
+            </div>
+        </div>
+    </section>
 
-Aan Traders is a trusted industrial trading and supply company serving major petrochemical, oil & gas, power, and manufacturing industries across India and international markets."
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="bg-gray-900 text-white py-20 px-6">
+        <div class="container mx-auto max-w-5xl grid md:grid-cols-2 gap-16">
+            <div>
+                <h2 class="text-3xl font-extrabold mb-8">Contact Our Office</h2>
+                <p class="mb-4"><span class="text-blue-brand font-bold">Call:</span> +91-9820828306</p>
+                <p class="mb-4"><span class="text-blue-brand font-bold">Email:</span> sales@aantraders.com</p>
+                <p class="mb-8 font-light">F107 Doctor House, Raheja Complex, Kalyan West, Maharashtra</p>
+                <p class="text-sm opacity-50">Warehouse: Bhiwandi</p>
+            </div>
+            <div class="bg-white/5 p-8 rounded-xl">
+                <h3 class="text-xl font-bold mb-4">Global Reach</h3>
+                <p class="text-gray-400">Saudi Arabia, Dubai, Sharjah, Kuwait, Oman</p>
+            </div>
+        </div>
+    </section>
 
-Also include:
-"Trusted Industrial Partner of Leading Industries Worldwide"
+    <footer class="py-10 text-center text-sm text-gray-400 border-t border-gray-100">
+        &copy; 2026 AAN TRADERS | PREMIUM INDUSTRIAL SOLUTIONS
+    </footer>
 
-ABOUT:
-- 10+ years experience
-- Serving 9000+ products
-- Serving across India, Middle East, Europe and global markets
-- Location: Kalyan, Maharashtra
-
-PRODUCTS:
-Show categories (grid, no dropdown, 1 image each):
-- Pipes & Tubes
-- Pipe Fittings
-- Flanges
-- Valves
-- Fasteners
-- Industrial Tools
-- Safety Equipment
-
-INDUSTRIES:
-Title: Powering Major Industries
-- Petrochemical
-- Oil & Gas
-- Power Plants
-- Fertilizer
-- Chemical
-- Construction
-- Shipyards
-- Manufacturing
-
-GLOBAL:
-Mention:
-Saudi Arabia, Dubai, Sharjah, Kuwait, Oman
-
-CLIENTS:
-Show only names (no logos), 10–15 companies
-
-CONTACT:
-Phone: +91-9820828306  
-Email: sales@aantraders.com  
-Website: www.aantraders.com  
-
-Address:
-F107 Doctor House, Raheja Complex  
-Kalyan West, Maharashtra  
-Warehouse: Bhiwandi
-
-FOOTER:
-Clean, minimal, professional
-
-IMPORTANT:
-- Keep everything clean and readable
-- No clutter
-- Professional B2B look
+</body>
+</html>
