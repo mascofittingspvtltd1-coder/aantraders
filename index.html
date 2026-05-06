@@ -3,76 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AAN Traders | Premium Industrial Supply</title>
+    <title>AAN Traders | Industrial Material Supply</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        .gold-gradient { background: linear-gradient(90deg, #FFD700 0%, #FFCC00 100%); }
-        .text-gold { color: #FFD700; }
-        .border-gold { border-color: #FFD700; }
+        .bg-golden { background-color: #FFD700; }
+        .text-golden { color: #FFD700; }
+        .border-golden { border-color: #FFD700; }
     </style>
 </head>
-<body class="bg-white font-sans">
+<body class="bg-gray-50 text-gray-800">
 
-    <!-- Header -->
-    <header class="bg-white shadow-sm sticky top-0 z-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="text-3xl font-black tracking-tighter italic">
-                <span class="text-gold">AAN</span> <span class="text-gray-800">TRADERS</span>
+            <div class="text-2xl font-bold text-gray-900">
+                <span class="text-golden">AAN</span> Traders
             </div>
-            <nav class="hidden md:flex space-x-8 text-sm font-bold uppercase tracking-widest text-gray-600">
-                <a href="#home" class="hover:text-gold">Home</a>
-                <a href="#about" class="hover:text-gold">About</a>
-                <a href="#products" class="hover:text-gold">Products</a>
-                <a href="#contact" class="hover:text-gold">Contact</a>
-            </nav>
-            <a href="https://wa.me/91XXXXXXXXXX" class="gold-gradient text-black px-6 py-2 rounded-full font-bold shadow-lg text-sm">WHATSAPP US</a>
+            <div class="hidden md:flex space-x-8 font-medium">
+                <a href="#home" class="hover:text-golden">Home</a>
+                <a href="#products" class="hover:text-golden">Products</a>
+                <a href="#contact" class="hover:text-golden">Contact</a>
+            </div>
+            <a href="https://wa.me/YOUR_NUMBER" class="bg-golden text-black px-5 py-2 rounded-full font-bold hover:bg-yellow-500 transition">Order Now</a>
         </div>
-    </header>
+    </nav>
 
-    <!-- Hero Section (Clean Like GoDaddy) -->
-    <section id="home" class="relative h-[80vh] flex items-center bg-gray-900 overflow-hidden">
-        <div class="absolute inset-0 opacity-40 bg-[url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')] bg-cover bg-center"></div>
-        <div class="container mx-auto px-6 relative z-10">
-            <h1 class="text-6xl font-extrabold text-white leading-tight mb-6 uppercase">
-                Expert <span class="text-gold">Industrial</span><br>Material Solutions
-            </h1>
-            <p class="text-gray-300 text-xl max-w-2xl mb-8">
-                Providing high-quality engineering materials and construction supplies to power your business growth. 
-            </p>
-            <div class="flex space-x-4">
-                <a href="#products" class="gold-gradient text-black px-10 py-4 font-bold rounded shadow-xl">VIEW PRODUCTS</a>
-                <a href="#contact" class="border-2 border-white text-white px-10 py-4 font-bold rounded hover:bg-white hover:text-black transition">GET QUOTE</a>
+    <!-- Hero Section -->
+    <section id="home" class="py-20 bg-gray-900 text-white text-center">
+        <div class="container mx-auto px-6">
+            <h1 class="text-5xl font-extrabold mb-4">Reliable <span class="text-golden">Industrial Material</span> Solutions</h1>
+            <p class="text-xl text-gray-400 mb-8">Premium quality supplies for construction, manufacturing, and engineering projects.</p>
+            <a href="#contact" class="bg-golden text-black px-8 py-3 rounded-lg font-bold text-lg">Get a Free Quote</a>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-20">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-12 border-b-4 border-golden inline-block">Our Products</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-lg border-t-4 border-golden">
+                    <i class="fas fa-tools text-4xl text-golden mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Industrial Tools</h3>
+                    <p class="text-gray-600">High-performance mechanical and power tools for heavy-duty work.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg border-t-4 border-golden">
+                    <i class="fas fa-hard-hat text-4xl text-golden mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Safety Equipment</h3>
+                    <p class="text-gray-600">Premium safety gear, helmets, and protective wear for workers.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg border-t-4 border-golden">
+                    <i class="fas fa-gears text-4xl text-golden mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Raw Materials</h3>
+                    <p class="text-gray-600">Quality steel, pipes, and essential materials for manufacturing.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Products (Detailed Like Netlify) -->
-    <section id="products" class="py-20 bg-gray-50">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-black text-gray-900 mb-4 uppercase">Industrial Catalogue</h2>
-                <div class="w-24 h-1 gold-gradient mx-auto"></div>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
-                <!-- Product 1 -->
-                <div class="bg-white shadow-xl rounded-xl overflow-hidden border-b-8 border-gold group hover:-translate-y-2 transition duration-300">
-                    <div class="h-56 bg-gray-200 bg-[url('https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=500&q=80')] bg-cover"></div>
-                    <div class="p-8">
-                        <h3 class="text-2xl font-bold mb-3">Construction Tools</h3>
-                        <p class="text-gray-600 mb-4 italic text-sm">Heavy-duty power tools and precision instruments for large-scale engineering.</p>
-                        <button class="text-gold font-bold flex items-center group-hover:translate-x-2 transition">Inquiry Now <i class="fas fa-arrow-right ml-2"></i></button>
-                    </div>
-                </div>
-                <!-- Add more products here -->
-            </div>
+    <!-- Contact & Quote -->
+    <section id="contact" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6 max-w-lg bg-white p-10 rounded-xl shadow-2xl">
+            <h2 class="text-2xl font-bold mb-6 text-center">Request a <span class="text-golden">Bulk Quote</span></h2>
+            <form>
+                <input type="text" placeholder="Your Name" class="w-full p-3 mb-4 border rounded shadow-sm focus:outline-none focus:border-golden">
+                <input type="email" placeholder="Your Email" class="w-full p-3 mb-4 border rounded shadow-sm focus:outline-none focus:border-golden">
+                <textarea placeholder="Tell us about your requirements" class="w-full p-3 mb-4 border rounded shadow-sm h-32 focus:outline-none focus:border-golden"></textarea>
+                <button class="w-full bg-golden text-black font-bold py-3 rounded hover:bg-yellow-500">Send Inquiry</button>
+            </form>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-12 text-center border-t-4 border-gold">
-        <p class="text-sm tracking-widest opacity-60">© 2026 AAN TRADERS | KALYAN, MAHARASHTRA</p>
+    <footer class="bg-gray-900 text-gray-500 py-10 text-center">
+        <p>&copy; 2026 AAN Traders. All Rights Reserved. | Professional Industrial Supplies</p>
     </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/YOUR_NUMBER" class="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-2xl hover:bg-green-600 transition z-50">
+        <i class="fab fa-whatsapp text-3xl"></i>
+    </a>
 
 </body>
 </html>
