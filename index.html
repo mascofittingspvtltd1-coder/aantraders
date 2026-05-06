@@ -3,87 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AAN Traders | Industrial Material Supply</title>
+    <title>AAN Traders | Premium Industrial Solutions</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
-        .bg-golden { background-color: #FFD700; }
-        .text-golden { color: #FFD700; }
-        .border-golden { border-color: #FFD700; }
+        .hero-bg {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1600&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        .gold-text { color: #FFD700; }
+        .bg-gold { background-color: #FFD700; }
+        .product-card:hover { border-color: #FFD700; transform: translateY(-5px); transition: 0.3s; }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-800">
+<body class="bg-white font-sans text-gray-900">
 
-    <!-- Navigation -->
-    <nav class="bg-white shadow-md sticky top-0 z-50">
-        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="text-2xl font-bold text-gray-900">
-                <span class="text-golden">AAN</span> Traders
-            </div>
-            <div class="hidden md:flex space-x-8 font-medium">
-                <a href="#home" class="hover:text-golden">Home</a>
-                <a href="#products" class="hover:text-golden">Products</a>
-                <a href="#contact" class="hover:text-golden">Contact</a>
-            </div>
-            <a href="https://wa.me/YOUR_NUMBER" class="bg-golden text-black px-5 py-2 rounded-full font-bold hover:bg-yellow-500 transition">Order Now</a>
+    <!-- HEADER (Navigation) -->
+    <header class="bg-white py-4 border-b">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <div class="text-xl font-bold tracking-tighter">AAN <span class="gold-text">TRADERS</span></div>
+            <nav class="hidden md:flex space-x-6 text-xs font-bold uppercase">
+                <a href="#" class="hover:text-gold-text">Home</a>
+                <a href="#about" class="hover:text-gold-text">About</a>
+                <a href="#catalogue" class="hover:text-gold-text">Products</a>
+                <a href="#contact" class="hover:text-gold-text">Contact</a>
+            </nav>
+            <button class="bg-gold text-black px-4 py-1 text-xs font-bold">WHATSAPP</button>
         </div>
-    </nav>
+    </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="py-20 bg-gray-900 text-white text-center">
+    <!-- HERO SECTION (From your screenshot) -->
+    <section class="hero-bg h-[600px] flex items-center justify-center text-center text-white">
         <div class="container mx-auto px-6">
-            <h1 class="text-5xl font-extrabold mb-4">Reliable <span class="text-golden">Industrial Material</span> Solutions</h1>
-            <p class="text-xl text-gray-400 mb-8">Premium quality supplies for construction, manufacturing, and engineering projects.</p>
-            <a href="#contact" class="bg-golden text-black px-8 py-3 rounded-lg font-bold text-lg">Get a Free Quote</a>
+            <h2 class="text-xs font-bold tracking-[0.3em] uppercase mb-4">Expert <span class="gold-text">Industrial</span></h2>
+            <h1 class="text-4xl md:text-6xl font-bold uppercase mb-6">Material Solutions</h1>
+            <p class="max-w-2xl mx-auto text-gray-300 text-sm mb-8">Providing high-quality engineering materials and construction supplies to power your business growth.</p>
+            <div class="flex justify-center space-x-4">
+                <a href="#catalogue" class="bg-gold text-black px-6 py-2 font-bold text-xs">VIEW PRODUCTS</a>
+                <a href="#contact" class="border border-white px-6 py-2 font-bold text-xs hover:bg-white hover:text-black">GET QUOTE</a>
+            </div>
         </div>
     </section>
 
-    <!-- Products Section -->
-    <section id="products" class="py-20">
-        <div class="container mx-auto px-6 text-center">
-            <h2 class="text-3xl font-bold mb-12 border-b-4 border-golden inline-block">Our Products</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-white p-6 rounded-lg shadow-lg border-t-4 border-golden">
-                    <i class="fas fa-tools text-4xl text-golden mb-4"></i>
-                    <h3 class="text-xl font-bold mb-2">Industrial Tools</h3>
-                    <p class="text-gray-600">High-performance mechanical and power tools for heavy-duty work.</p>
+    <!-- INDUSTRIAL CATALOGUE (The Gallery you wanted) -->
+    <section id="catalogue" class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-xs font-bold tracking-widest uppercase text-gray-400 mb-2">Industrial Catalogue</h2>
+                <div class="h-1 w-10 bg-gold mx-auto"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <!-- Pipes -->
+                <div class="product-card border p-4 rounded-lg text-center">
+                    <img src="https://images.unsplash.com/photo-1542013936693-884638332954?w=400" class="w-full h-40 object-cover mb-4 rounded">
+                    <h3 class="font-bold text-sm uppercase">Pipes & Tubes</h3>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-lg border-t-4 border-golden">
-                    <i class="fas fa-hard-hat text-4xl text-golden mb-4"></i>
-                    <h3 class="text-xl font-bold mb-2">Safety Equipment</h3>
-                    <p class="text-gray-600">Premium safety gear, helmets, and protective wear for workers.</p>
+                <!-- Valves -->
+                <div class="product-card border p-4 rounded-lg text-center">
+                    <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=400" class="w-full h-40 object-cover mb-4 rounded">
+                    <h3 class="font-bold text-sm uppercase">Valves</h3>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-lg border-t-4 border-golden">
-                    <i class="fas fa-gears text-4xl text-golden mb-4"></i>
-                    <h3 class="text-xl font-bold mb-2">Raw Materials</h3>
-                    <p class="text-gray-600">Quality steel, pipes, and essential materials for manufacturing.</p>
+                <!-- Flanges -->
+                <div class="product-card border p-4 rounded-lg text-center">
+                    <img src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?w=400" class="w-full h-40 object-cover mb-4 rounded">
+                    <h3 class="font-bold text-sm uppercase">Flanges</h3>
+                </div>
+                <!-- Rubber Products -->
+                <div class="product-card border p-4 rounded-lg text-center">
+                    <img src="https://images.unsplash.com/photo-1590959651373-a3db0f38a961?w=400" class="w-full h-40 object-cover mb-4 rounded">
+                    <h3 class="font-bold text-sm uppercase">Rubber Products</h3>
+                </div>
+                <!-- Fasteners -->
+                <div class="product-card border p-4 rounded-lg text-center">
+                    <img src="https://images.unsplash.com/photo-1610992015732-2449b0c26670?w=400" class="w-full h-40 object-cover mb-4 rounded">
+                    <h3 class="font-bold text-sm uppercase">Fasteners</h3>
+                </div>
+                <!-- Tools -->
+                <div class="product-card border p-4 rounded-lg text-center">
+                    <img src="https://images.unsplash.com/photo-1581244276891-6638a96e625a?w=400" class="w-full h-40 object-cover mb-4 rounded">
+                    <h3 class="font-bold text-sm uppercase">Industrial Tools</h3>
+                </div>
+                <!-- Safety -->
+                <div class="product-card border p-4 rounded-lg text-center">
+                    <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=400" class="w-full h-40 object-cover mb-4 rounded">
+                    <h3 class="font-bold text-sm uppercase">Safety Equipment</h3>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact & Quote -->
-    <section id="contact" class="py-20 bg-gray-100">
-        <div class="container mx-auto px-6 max-w-lg bg-white p-10 rounded-xl shadow-2xl">
-            <h2 class="text-2xl font-bold mb-6 text-center">Request a <span class="text-golden">Bulk Quote</span></h2>
-            <form>
-                <input type="text" placeholder="Your Name" class="w-full p-3 mb-4 border rounded shadow-sm focus:outline-none focus:border-golden">
-                <input type="email" placeholder="Your Email" class="w-full p-3 mb-4 border rounded shadow-sm focus:outline-none focus:border-golden">
-                <textarea placeholder="Tell us about your requirements" class="w-full p-3 mb-4 border rounded shadow-sm h-32 focus:outline-none focus:border-golden"></textarea>
-                <button class="w-full bg-golden text-black font-bold py-3 rounded hover:bg-yellow-500">Send Inquiry</button>
-            </form>
+    <!-- ABOUT SECTION -->
+    <section id="about" class="bg-gray-100 py-20">
+        <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h2 class="text-3xl font-bold mb-6">Serving Industries for <span class="gold-text">10+ Years</span></h2>
+                <p class="text-gray-600 mb-6 leading-relaxed">AAN Traders is a trusted name in Mumbai, supplying over 9000+ industrial products across India, the Middle East, and Europe.</p>
+                <ul class="space-y-3 font-bold text-sm">
+                    <li><i class="fas fa-check-circle gold-text mr-2"></i> Oil & Gas / Petrochemical</li>
+                    <li><i class="fas fa-check-circle gold-text mr-2"></i> Power Plants & Manufacturing</li>
+                    <li><i class="fas fa-check-circle gold-text mr-2"></i> Construction & Shipyards</li>
+                </ul>
+            </div>
+            <div class="bg-white p-8 border-l-8 border-gold shadow-lg">
+                <h3 class="text-xl font-bold mb-4 uppercase">Global Supply Reach</h3>
+                <p class="text-sm text-gray-500 italic">Saudi Arabia, Dubai, Sharjah, Kuwait, Oman.</p>
+            </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-gray-500 py-10 text-center">
-        <p>&copy; 2026 AAN Traders. All Rights Reserved. | Professional Industrial Supplies</p>
+    <!-- CONTACT & FOOTER -->
+    <footer id="contact" class="bg-black text-white py-12">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-xl font-bold mb-6">AAN TRADERS</h2>
+            <p class="text-gray-400 text-sm mb-4">F107 Doctor House, Raheja Complex, Kalyan West, Maharashtra.</p>
+            <p class="gold-text font-bold text-lg">+91-9820828306</p>
+            <div class="mt-8 text-gray-600 text-[10px] uppercase tracking-widest">
+                &copy; 2026 AAN TRADERS | All Rights Reserved
+            </div>
+        </div>
     </footer>
-
-    <!-- Floating WhatsApp Button -->
-    <a href="https://wa.me/YOUR_NUMBER" class="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-2xl hover:bg-green-600 transition z-50">
-        <i class="fab fa-whatsapp text-3xl"></i>
-    </a>
 
 </body>
 </html>
