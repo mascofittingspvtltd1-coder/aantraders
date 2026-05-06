@@ -3,120 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AAN Traders | Industrial Catalogue</title>
+    <title>AAN Traders | Premium Industrial Supply</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
-        .blue-brand { color: #1877F2; }
-        .bg-blue-brand { background-color: #1877F2; }
-        .product-card { transition: all 0.3s ease; border: 1px solid #eee; }
-        .product-card:hover { transform: translateY(-10px); box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1); border-color: #1877F2; }
+        .gold-gradient { background: linear-gradient(90deg, #FFD700 0%, #FFCC00 100%); }
+        .text-gold { color: #FFD700; }
+        .border-gold { border-color: #FFD700; }
     </style>
 </head>
-<body class="bg-white text-gray-800">
+<body class="bg-white font-sans">
 
-    <!-- NAVIGATION -->
-    <nav class="bg-white shadow-sm sticky top-0 z-50">
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="text-2xl font-bold text-blue-brand italic">AAN TRADERS</div>
-            <div class="hidden md:flex space-x-8 font-semibold">
-                <a href="#" class="hover:text-blue-brand">Home</a>
-                <a href="#catalogue" class="hover:text-blue-brand">Catalogue</a>
-                <a href="#contact" class="hover:text-blue-brand">Contact</a>
+            <div class="text-3xl font-black tracking-tighter italic">
+                <span class="text-gold">AAN</span> <span class="text-gray-800">TRADERS</span>
             </div>
+            <nav class="hidden md:flex space-x-8 text-sm font-bold uppercase tracking-widest text-gray-600">
+                <a href="#home" class="hover:text-gold">Home</a>
+                <a href="#about" class="hover:text-gold">About</a>
+                <a href="#products" class="hover:text-gold">Products</a>
+                <a href="#contact" class="hover:text-gold">Contact</a>
+            </nav>
+            <a href="https://wa.me/91XXXXXXXXXX" class="gold-gradient text-black px-6 py-2 rounded-full font-bold shadow-lg text-sm">WHATSAPP US</a>
         </div>
-    </nav>
+    </header>
 
-    <!-- HERO SECTION -->
-    <section class="bg-slate-50 py-20 border-b">
-        <div class="container mx-auto px-6 text-center">
-            <h1 class="text-4xl md:text-6xl font-extrabold mb-4">Industrial <span class="text-blue-brand">Catalogue</span></h1>
-            <p class="text-xl text-gray-600 max-w-2xl mx-auto italic">Providing high-quality engineering materials and construction supplies to power your business growth.</p>
+    <!-- Hero Section (Clean Like GoDaddy) -->
+    <section id="home" class="relative h-[80vh] flex items-center bg-gray-900 overflow-hidden">
+        <div class="absolute inset-0 opacity-40 bg-[url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')] bg-cover bg-center"></div>
+        <div class="container mx-auto px-6 relative z-10">
+            <h1 class="text-6xl font-extrabold text-white leading-tight mb-6 uppercase">
+                Expert <span class="text-gold">Industrial</span><br>Material Solutions
+            </h1>
+            <p class="text-gray-300 text-xl max-w-2xl mb-8">
+                Providing high-quality engineering materials and construction supplies to power your business growth. 
+            </p>
+            <div class="flex space-x-4">
+                <a href="#products" class="gold-gradient text-black px-10 py-4 font-bold rounded shadow-xl">VIEW PRODUCTS</a>
+                <a href="#contact" class="border-2 border-white text-white px-10 py-4 font-bold rounded hover:bg-white hover:text-black transition">GET QUOTE</a>
+            </div>
         </div>
     </section>
 
-    <!-- PRODUCT GALLERY SECTION -->
-    <section id="catalogue" class="py-20">
+    <!-- Products (Detailed Like Netlify) -->
+    <section id="products" class="py-20 bg-gray-50">
         <div class="container mx-auto px-6">
             <div class="text-center mb-16">
-                <h2 class="text-3xl font-bold uppercase tracking-widest">Our Product Range</h2>
-                <div class="h-1 w-20 bg-blue-brand mx-auto mt-4"></div>
+                <h2 class="text-4xl font-black text-gray-900 mb-4 uppercase">Industrial Catalogue</h2>
+                <div class="w-24 h-1 gold-gradient mx-auto"></div>
             </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
-                <!-- Pipe & Tubes -->
-                <div class="product-card rounded-xl overflow-hidden bg-white">
-                    <img src="https://images.unsplash.com/photo-1542013936693-884638332954?auto=format&fit=crop&w=500&q=60" class="w-full h-48 object-cover">
-                    <div class="p-6 text-center">
-                        <h3 class="font-bold text-xl mb-2">Pipes & Tubes</h3>
-                        <p class="text-sm text-gray-500">Seamless & Welded Solutions</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <!-- Product 1 -->
+                <div class="bg-white shadow-xl rounded-xl overflow-hidden border-b-8 border-gold group hover:-translate-y-2 transition duration-300">
+                    <div class="h-56 bg-gray-200 bg-[url('https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=500&q=80')] bg-cover"></div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold mb-3">Construction Tools</h3>
+                        <p class="text-gray-600 mb-4 italic text-sm">Heavy-duty power tools and precision instruments for large-scale engineering.</p>
+                        <button class="text-gold font-bold flex items-center group-hover:translate-x-2 transition">Inquiry Now <i class="fas fa-arrow-right ml-2"></i></button>
                     </div>
                 </div>
-
-                <!-- Industrial Valves -->
-                <div class="product-card rounded-xl overflow-hidden bg-white">
-                    <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&w=500&q=60" class="w-full h-48 object-cover">
-                    <div class="p-6 text-center">
-                        <h3 class="font-bold text-xl mb-2">Industrial Valves</h3>
-                        <p class="text-sm text-gray-500">Gate, Globe, Check & Ball</p>
-                    </div>
-                </div>
-
-                <!-- Flanges -->
-                <div class="product-card rounded-xl overflow-hidden bg-white">
-                    <img src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?auto=format&fit=crop&w=500&q=60" class="w-full h-48 object-cover">
-                    <div class="p-6 text-center">
-                        <h3 class="font-bold text-xl mb-2">Flanges</h3>
-                        <p class="text-sm text-gray-500">Forged & Plate Flanges</p>
-                    </div>
-                </div>
-
-                <!-- Rubber Products -->
-                <div class="product-card rounded-xl overflow-hidden bg-white">
-                    <img src="https://images.unsplash.com/photo-1590959651373-a3db0f38a961?auto=format&fit=crop&w=500&q=60" class="w-full h-48 object-cover">
-                    <div class="p-6 text-center">
-                        <h3 class="font-bold text-xl mb-2">Rubber Products</h3>
-                        <p class="text-sm text-gray-500">Industrial Gaskets & Seals</p>
-                    </div>
-                </div>
-
-                <!-- Fasteners -->
-                <div class="product-card rounded-xl overflow-hidden bg-white">
-                    <img src="https://images.unsplash.com/photo-1610992015732-2449b0c26670?auto=format&fit=crop&w=500&q=60" class="w-full h-48 object-cover">
-                    <div class="p-6 text-center">
-                        <h3 class="font-bold text-xl mb-2">Fasteners</h3>
-                        <p class="text-sm text-gray-500">Bolts, Nuts & Washers</p>
-                    </div>
-                </div>
-
-                <!-- Industrial Tools -->
-                <div class="product-card rounded-xl overflow-hidden bg-white">
-                    <img src="https://images.unsplash.com/photo-1581244276891-6638a96e625a?auto=format&fit=crop&w=500&q=60" class="w-full h-48 object-cover">
-                    <div class="p-6 text-center">
-                        <h3 class="font-bold text-xl mb-2">Industrial Tools</h3>
-                        <p class="text-sm text-gray-500">Heavy Duty Equipment</p>
-                    </div>
-                </div>
-
-                <!-- Safety Equipment -->
-                <div class="product-card rounded-xl overflow-hidden bg-white">
-                    <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&w=500&q=60" class="w-full h-48 object-cover">
-                    <div class="p-6 text-center">
-                        <h3 class="font-bold text-xl mb-2">Safety Equipment</h3>
-                        <p class="text-sm text-gray-500">PPE & Site Safety Gear</p>
-                    </div>
-                </div>
+                <!-- Add more products here -->
             </div>
         </div>
     </section>
 
-    <!-- CONTACT SECTION -->
-    <footer id="contact" class="bg-gray-900 text-white py-12">
-        <div class="container mx-auto px-6 text-center">
-            <h2 class="text-2xl font-bold mb-4">AAN TRADERS</h2>
-            <p class="mb-2">Kalyan West, Maharashtra, India</p>
-            <p class="text-blue-400 font-bold">Contact: +91-9820828306</p>
-        </div>
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 text-center border-t-4 border-gold">
+        <p class="text-sm tracking-widest opacity-60">© 2026 AAN TRADERS | KALYAN, MAHARASHTRA</p>
     </footer>
 
 </body>
