@@ -1,79 +1,126 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AAN Traders | Premium Industrial Supply</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <style>
-        .gold-gradient { background: linear-gradient(90deg, #FFD700 0%, #FFCC00 100%); }
-        .text-gold { color: #FFD700; }
-        .border-gold { border-color: #FFD700; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AAN Traders</title>
+
+<style>
+body {
+  margin:0;
+  font-family: Arial, sans-serif;
+  background:#ffffff;
+  color:#222;
+}
+
+header {
+  display:flex;
+  justify-content:space-between;
+  padding:20px 40px;
+  background:#fff;
+  position:sticky;
+  top:0;
+}
+
+header h1 {
+  color:#1877F2;
+}
+
+nav a {
+  margin:0 10px;
+  text-decoration:none;
+  color:#333;
+  font-weight:bold;
+}
+
+.hero {
+  padding:80px 40px;
+}
+
+.hero h2 {
+  font-size:40px;
+}
+
+.section {
+  padding:60px 40px;
+}
+
+.grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:20px;
+}
+
+.card {
+  border:1px solid #eee;
+  padding:20px;
+}
+
+footer {
+  background:#f5f5f5;
+  padding:40px;
+  text-align:center;
+}
+</style>
 </head>
-<body class="bg-white font-sans">
 
-    <!-- Header -->
-    <header class="bg-white shadow-sm sticky top-0 z-50">
-        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="text-3xl font-black tracking-tighter italic">
-                <span class="text-gold">AAN</span> <span class="text-gray-800">TRADERS</span>
-            </div>
-            <nav class="hidden md:flex space-x-8 text-sm font-bold uppercase tracking-widest text-gray-600">
-                <a href="#home" class="hover:text-gold">Home</a>
-                <a href="#about" class="hover:text-gold">About</a>
-                <a href="#products" class="hover:text-gold">Products</a>
-                <a href="#contact" class="hover:text-gold">Contact</a>
-            </nav>
-            <a href="https://wa.me/91XXXXXXXXXX" class="gold-gradient text-black px-6 py-2 rounded-full font-bold shadow-lg text-sm">WHATSAPP US</a>
-        </div>
-    </header>
+<body>
 
-    <!-- Hero Section (Clean Like GoDaddy) -->
-    <section id="home" class="relative h-[80vh] flex items-center bg-gray-900 overflow-hidden">
-        <div class="absolute inset-0 opacity-40 bg-[url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')] bg-cover bg-center"></div>
-        <div class="container mx-auto px-6 relative z-10">
-            <h1 class="text-6xl font-extrabold text-white leading-tight mb-6 uppercase">
-                Expert <span class="text-gold">Industrial</span><br>Material Solutions
-            </h1>
-            <p class="text-gray-300 text-xl max-w-2xl mb-8">
-                Providing high-quality engineering materials and construction supplies to power your business growth. 
-            </p>
-            <div class="flex space-x-4">
-                <a href="#products" class="gold-gradient text-black px-10 py-4 font-bold rounded shadow-xl">VIEW PRODUCTS</a>
-                <a href="#contact" class="border-2 border-white text-white px-10 py-4 font-bold rounded hover:bg-white hover:text-black transition">GET QUOTE</a>
-            </div>
-        </div>
-    </section>
+<header>
+  <h1>AAN TRADERS</h1>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Products</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+  </nav>
+</header>
 
-    <!-- Products (Detailed Like Netlify) -->
-    <section id="products" class="py-20 bg-gray-50">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-black text-gray-900 mb-4 uppercase">Industrial Catalogue</h2>
-                <div class="w-24 h-1 gold-gradient mx-auto"></div>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
-                <!-- Product 1 -->
-                <div class="bg-white shadow-xl rounded-xl overflow-hidden border-b-8 border-gold group hover:-translate-y-2 transition duration-300">
-                    <div class="h-56 bg-gray-200 bg-[url('https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=500&q=80')] bg-cover"></div>
-                    <div class="p-8">
-                        <h3 class="text-2xl font-bold mb-3">Construction Tools</h3>
-                        <p class="text-gray-600 mb-4 italic text-sm">Heavy-duty power tools and precision instruments for large-scale engineering.</p>
-                        <button class="text-gold font-bold flex items-center group-hover:translate-x-2 transition">Inquiry Now <i class="fas fa-arrow-right ml-2"></i></button>
-                    </div>
-                </div>
-                <!-- Add more products here -->
-            </div>
-        </div>
-    </section>
+<section class="hero">
+  <h2>Mumbai, India<br>Industrial Supply Solutions You Can Rely On</h2>
+  <p>Trusted Industrial Partner of Leading Industries Worldwide</p>
+</section>
 
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-12 text-center border-t-4 border-gold">
-        <p class="text-sm tracking-widest opacity-60">© 2026 AAN TRADERS | KALYAN, MAHARASHTRA</p>
-    </footer>
+<section class="section">
+  <h2>About Us</h2>
+  <p>10+ years experience. 9000+ products supplied globally across India, Middle East and Europe.</p>
+</section>
+
+<section class="section">
+  <h2>Products</h2>
+  <div class="grid">
+    <div class="card">Pipes & Tubes</div>
+    <div class="card">Pipe Fittings</div>
+    <div class="card">Flanges</div>
+    <div class="card">Valves</div>
+    <div class="card">Fasteners</div>
+    <div class="card">Industrial Tools</div>
+    <div class="card">Safety Equipment</div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Industries</h2>
+  <p>Petrochemical, Oil & Gas, Power, Construction, Manufacturing</p>
+</section>
+
+<section class="section">
+  <h2>Clients</h2>
+  <p>Reliance, ONGC, Indian Oil, BPCL, HPCL, L&T, GAIL, Adani</p>
+</section>
+
+<section class="section">
+  <h2>Contact</h2>
+  <p>Phone: +91-9820828306</p>
+  <p>Email: sales@aantraders.com</p>
+  <p>Website: www.aantraders.com</p>
+  <p>Kalyan, Maharashtra | Warehouse: Bhiwandi</p>
+</section>
+
+<footer>
+  <p>AAN Traders | Mumbai, India</p>
+</footer>
 
 </body>
 </html>
