@@ -108,9 +108,12 @@
         </div>
     </div>
 </section>
-  <section id="clients" class="py-20 bg-gray-50 border-y border-gray-200">
-    <div class="container mx-auto px-6 text-center">
-        <h1 class="text-3xl font-bold text-yellow-800 uppercase tracking-[0.2em] mb-12">Authorized Suppliers To</h2>
+ <section id="clients" class="py-24 bg-gray-50 border-y border-gray-200 relative overflow-hidden">
+    <div id="confetti-blast-area" class="absolute inset-x-0 top-0 h-40 z-0"></div>
+    <div class="container mx-auto px-6 text-center relative z-10">
+        <h1 class="text-3xl md:text-5xl font-black text-gray-900 uppercase tracking-[0.2em] mb-12">
+            Authorized Suppliers To
+        </h1>
         
         <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6">
             
@@ -302,3 +305,27 @@
 
 </body>
 </html>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const blastArea = document.getElementById('confetti-blast-area');
+        function fireBlast() {
+            confetti({
+                particleCount: 150,
+                spread: 100,
+                origin: { y: 0.3 },
+                colors: ['#0046ad', '#fcd34d', '#ff0000']
+            });
+        }
+        let hasBlasted = false;
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting && !hasBlasted) {
+                    fireBlast();
+                    hasBlasted = true;
+                }
+            });
+        }, { threshold: 0.5 });
+        observer.observe(blastArea);
+    });
+</script>
