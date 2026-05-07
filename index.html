@@ -3,206 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AAN TRADERS | Industrial Engineering Supply</title>
+    <title>AAN TRADERS | Industrial Engineering & Recruitment</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Lexend:wght@700&display=swap');
-        body { font-family: 'Inter', sans-serif; background-color: #ffffff; color: #1a1a1a; scroll-behavior: smooth; }
-        .company-title { font-family: 'Lexend', sans-serif; letter-spacing: -0.02em; }
-        .btn-primary { background: #0046ad; transition: all 0.3s ease; }
-        .btn-primary:hover { background: #00358a; transform: translateY(-1px); }
-        .product-card { border: 1px solid #f1f1f1; transition: all 0.3s ease; background: #fff; }
-        .product-card:hover { border-color: #0046ad; box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
-        .tax-label { color: #6b7280; font-size: 10px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em; }
-        .tax-value { color: #111827; font-weight: 700; font-family: monospace; font-size: 13px; }
+        html { scroll-behavior: smooth; }
+        .hero-gradient { background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)); }
     </style>
 </head>
-<body>
+<body class="font-sans text-gray-900 bg-gray-50">
 
-    <!-- NAVIGATION -->
-    <nav class="bg-white border-b border-gray-100 sticky top-0 z-50">
-    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-        <div class="company-title text-2xl font-bold">
-            <span class="text-[#0046ad]">AAN</span> <span class="text-gray-900">TRADERS</span>
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-black text-blue-800 tracking-tighter uppercase">
+                AAN <span class="text-gray-700">TRADERS</span>
+            </div>
+            <div class="hidden md:flex space-x-8 font-bold text-sm uppercase tracking-wider">
+                <a href="#home" class="hover:text-blue-600 transition">Home</a>
+                <a href="#products" class="hover:text-blue-600 transition">Products</a>
+                <a href="#about" class="hover:text-blue-600 transition">Company</a>
+                <a href="#contact" class="hover:text-blue-600 transition">Contact</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-gray-700">
+                <svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
         </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t px-6 py-4 space-y-4 shadow-lg">
+            <a href="#home" class="block font-bold text-gray-700">HOME</a>
+            <a href="#products" class="block font-bold text-gray-700">PRODUCTS</a>
+            <a href="#about" class="block font-bold text-gray-700">COMPANY</a>
+            <a href="#contact" class="block font-bold text-gray-700">CONTACT</a>
+            <a href="tel:+919820828306" class="block bg-blue-700 text-white text-center py-2 rounded font-bold">CALL NOW</a>
+        </div>
+    </nav>
 
-        <div class="hidden md:flex space-x-8 items-center text-[12px] font-bold tracking-wider text-gray-600 uppercase">
-            <a href="#home" class="hover:text-[#0046ad]">Home</a>
-            <a href="#products" class="hover:text-[#0046ad]">Products</a>
-            <a href="#about" class="hover:text-[#0046ad]">Partners</a>
-            <a href="#contact" class="hover:text-[#0046ad]">Contact</a>
-            <a href="tel:+919820828306" class="btn-primary text-white px-5 py-2.5 rounded shadow-sm">GET A QUOTE</a>
+    <section id="home" class="relative h-[600px] flex items-center justify-center text-white">
+        <div class="absolute inset-0 z-0">
+            <img src="hero.jpg" class="w-full h-full object-cover" alt="Industrial Engineering" 
+                 onerror="this.src='https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=2070'">
+            <div class="absolute inset-0 hero-gradient"></div>
         </div>
+        <div class="relative z-10 text-center px-6">
+            <h1 class="text-5xl md:text-7xl font-black mb-6 leading-tight uppercase">Industrial <br><span class="text-blue-400">Engineering</span> Solutions</h1>
+            <p class="text-xl mb-10 max-w-2xl mx-auto font-light">Leading Supplier of High Precision Fasteners, Tools & Recruitment Services for Saudi Arabia.</p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#products" class="bg-blue-600 hover:bg-blue-700 px-10 py-4 rounded font-bold shadow-xl transition">OUR PRODUCTS</a>
+                <a href="https://wa.me/919820828306" class="bg-green-600 hover:bg-green-700 px-10 py-4 rounded font-bold shadow-xl transition">WHATSAPP US</a>
+            </div>
+        </div>
+    </section>
 
-        <div class="md:hidden flex items-center">
-            <button id="mobile-menu-button" class="text-gray-700 focus:outline-none">
-              <section id="home" class="relative min-h-[500px] flex items-center justify-center text-white bg-blue-900">
-    <div class="absolute inset-0 z-0">
-        <img src="hero.jpg" class="w-full h-full object-cover opacity-60" alt="Aan Traders Industrial">
-    </div>
+    <section id="products" class="py-20 container mx-auto px-6">
+        <h2 class="text-3xl font-black text-center mb-16 uppercase tracking-widest border-b-4 border-blue-600 inline-block mx-auto">Our Expertise</h2>
+        <div class="grid md:grid-cols-3 gap-10">
+            <div class="bg-white p-8 rounded-xl shadow-lg border-t-4 border-blue-600">
+                <h3 class="text-xl font-bold mb-4 uppercase">Precision Fasteners</h3>
+                <p class="text-gray-600">High-quality nuts, bolts, screws, and custom engineered fasteners for industrial plants.</p>
+            </div>
+            <div class="bg-white p-8 rounded-xl shadow-lg border-t-4 border-blue-600">
+                <h3 class="text-xl font-bold mb-4 uppercase">Industrial Tools</h3>
+                <p class="text-gray-600">Supplying precision tools and safety equipment for petrochemical and power sectors.</p>
+            </div>
+            <div class="bg-white p-8 rounded-xl shadow-lg border-t-4 border-blue-600">
+                <h3 class="text-xl font-bold mb-4 uppercase">Gulf Recruitment</h3>
+                <p class="text-gray-600">Recruitment for Saudi Arabia including 6G Welders, Fitters, and Technical Labours.</p>
+            </div>
+        </div>
+    </section>
 
-    <div class="relative z-10 text-center px-6 py-20">
-        <span class="bg-blue-600 text-white px-3 py-1 text-xs font-bold uppercase tracking-widest rounded">Engineering Excellence</span>
-        <h1 class="text-4xl md:text-6xl font-black mt-4 mb-6 leading-tight uppercase">
-            Industrial <span class="text-blue-400">Supply</span> Partners
-        </h1>
-        <p class="text-lg md:text-xl mb-10 max-w-2xl mx-auto text-gray-100">
-            Providing high-quality engineering materials for Oil & Gas, Petrochemical, and Power sectors.
-        </p>
-        <div class="flex flex-wrap justify-center gap-4">
-            <a href="#products" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded shadow-lg transition">EXPLORE PRODUCTS</a>
-            <a href="#contact" class="bg-white hover:bg-gray-100 text-blue-900 font-bold py-3 px-8 rounded shadow-lg transition">CONTACT US</a>
-        </div>
-    </div>
-</section>
-        </h1>
-        <p class="text-lg md:text-2xl mb-10 max-w-3xl mx-auto text-gray-100 font-medium">
-            Providing high-quality engineering materials for Oil & Gas, Petrochemical, and Power sectors.
-        </p>
-        <div class="flex flex-wrap justify-center gap-5">
-            <a href="#products" class="bg-blue-700 hover:bg-blue-800 text-white font-extrabold py-4 px-10 rounded shadow-2xl transition-all transform hover:scale-105 uppercase tracking-wider">
-                Explore Products
-            </a>
-            <a href="#contact" class="bg-white hover:bg-gray-100 text-blue-900 font-extrabold py-4 px-10 rounded shadow-2xl transition-all transform hover:scale-105 uppercase tracking-wider border-2 border-white">
-                Contact Us
-            </a>
-        </div>
-    </div>
-</section>
-    <!-- HERO SECTION -->
-    <section id="home" class="py-16 md:py-24 bg-white">
-        <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+    <footer id="contact" class="bg-gray-900 text-gray-300 py-16 px-6">
+        <div class="container mx-auto grid md:grid-cols-2 gap-12 border-b border-gray-800 pb-12">
             <div>
-                <div class="inline-block px-3 py-1 bg-blue-50 text-[#0046ad] text-[10px] font-bold uppercase tracking-[0.2em] rounded mb-6">Industrial Engineering Excellence</div>
-                <h1 class="text-4xl md:text-6xl font-extrabold text-gray-900 leading-tight mb-6 uppercase">
-                    Precision <br><span class="text-[#0046ad]">Industrial</span> <br>Supply.
-                </h1>
-                <p class="text-gray-500 text-lg mb-10 leading-relaxed">High-grade material supply for Oil & Gas, Petrochemical, and Power sectors with global logistics support.</p>
-                <a href="#contact" class="btn-primary text-white px-8 py-3.5 rounded font-bold text-sm uppercase tracking-wider">Send Inquiry</a>
+                <h2 class="text-white text-2xl font-bold mb-6 uppercase">Contact Details</h2>
+                <p class="mb-4"><strong>Office:</strong> F107, Raheja Complex, Kalyan West, Maharashtra 421301 </p>
+                <p class="mb-4"><strong>Warehouse:</strong> Bhiwandi, Thane District </p>
+                <p class="mb-4"><strong>Phone:</strong> +91 98208 28306 </p>
+                <p class="mb-4"><strong>Email:</strong> sales@aan-traders.co.in </p>
             </div>
-            <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=800&q=80" class="rounded shadow-xl border border-gray-100">
-        </div>
-    </section>
-
-    <!-- AUTHORIZED SUPPLIER SECTION -->
-    <section id="clients" class="py-16 bg-white border-y border-gray-50">
-        <div class="container mx-auto px-6 text-center">
-            <h2 class="text-xs font-bold text-gray-400 uppercase tracking-[0.3em] mb-10">Authorized Suppliers To</h2>
-            <div class="grid grid-cols-2 md:grid-cols-5 gap-8 items-center">
-                <div class="text-2xl md:text-3xl font-black text-[#0046ad] tracking-tighter italic">RELIANCE</div>
-                <div class="text-2xl md:text-3xl font-black text-[#0046ad] tracking-tighter italic">ONGC</div>
-                <div class="text-2xl md:text-3xl font-black text-[#0046ad] tracking-tighter italic">GAIL</div>
-                <div class="text-2xl md:text-3xl font-black text-[#0046ad] tracking-tighter italic">L&T</div>
-                <div class="text-2xl md:text-3xl font-black text-[#0046ad] tracking-tighter italic">TATA STEEL</div>
+            <div>
+                <h2 class="text-white text-2xl font-bold mb-6 uppercase">Registration Information</h2>
+                <p class="mb-2"><strong>Company:</strong> Aan Traders </p>
+                <p class="mb-2"><strong>Identity:</strong> Mukesh Sharma / Ikram Jafri </p>
+                <p class="text-sm text-gray-500 mt-6 italic">Registered with GST, PAN & UDYAM Certification.</p>
             </div>
         </div>
-    </section>
-
-    <!-- ALL PRODUCTS (Full 6 Product Range) -->
-    <section id="products" class="py-20 bg-gray-50">
-        <div class="container mx-auto px-6">
-            <h2 class="text-center text-3xl font-bold text-gray-900 mb-16 uppercase tracking-tight">Our Full Product Range</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="product-card p-6 rounded-lg text-center">
-                    <img src="https://images.unsplash.com/photo-1542013936693-884638332954?w=500" class="w-full h-40 object-cover rounded mb-4">
-                    <h3 class="font-bold uppercase text-sm tracking-wide">Pipes & Tubes</h3>
-                </div>
-                <div class="product-card p-6 rounded-lg text-center">
-                    <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=500" class="w-full h-40 object-cover rounded mb-4">
-                    <h3 class="font-bold uppercase text-sm tracking-wide">Industrial Valves</h3>
-                </div>
-                <div class="product-card p-6 rounded-lg text-center">
-                    <img src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?w=500" class="w-full h-40 object-cover rounded mb-4">
-                    <h3 class="font-bold uppercase text-sm tracking-wide">Flanges</h3>
-                </div>
-                <div class="product-card p-6 rounded-lg text-center">
-                    <img src="https://images.unsplash.com/photo-1610992015732-2449b0c26670?w=500" class="w-full h-40 object-cover rounded mb-4">
-                    <h3 class="font-bold uppercase text-sm tracking-wide">Fasteners</h3>
-                </div>
-                <div class="product-card p-6 rounded-lg text-center">
-                    <img src="https://images.unsplash.com/photo-1581244276891-6638a96e625a?w=500" class="w-full h-40 object-cover rounded mb-4">
-                    <h3 class="font-bold uppercase text-sm tracking-wide">Industrial Tools</h3>
-                </div>
-                <div class="product-card p-6 rounded-lg text-center">
-                    <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=500" class="w-full h-40 object-cover rounded mb-4">
-                    <h3 class="font-bold uppercase text-sm tracking-wide">Safety Material</h3>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CONTACT & REGISTRATION DETAILS -->
-  <section id="contact" class="py-16 bg-gray-50">
-    <div class="container mx-auto px-6">
-        <h2 class="text-3xl font-extrabold text-gray-900 mb-12 uppercase">Corporate Details</h2>
-        
-        <div class="grid md:grid-cols-2 gap-12">
-            <div class="space-y-8">
-                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100 space-y-4">
-                    <div class="flex items-start gap-4">
-                        <span class="text-2xl">🏢</span>
-                        <div>
-                            <p class="text-gray-700 leading-relaxed">
-                                F107 Doctor House CCS Shiv shakti / Raheja Complex<br>
-                                Kalyan West. 421301 Dist-Thane M.H India.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="flex items-start gap-4">
-                        <span class="text-2xl">🏭</span>
-                        <p class="text-gray-700"><strong>Warehouse:</strong> Bhiwandi, Dist Thane, Maharashtra.</p>
-                    </div>
-                </div>
-
-                <div class="bg-blue-50 p-6 rounded-lg border border-blue-100 space-y-4">
-                    <div class="flex items-center gap-4">
-                        <span class="text-2xl">📞</span>
-                        <a href="tel:+919820828306" class="text-xl font-bold text-blue-800">+91 98208 28306</a>
-                    </div>
-                    <div class="flex items-center gap-4">
-                        <span class="text-2xl">✉️</span>
-                        <p class="text-gray-700 font-medium">info@aantraders.com</p>
-                    </div>
-                </div>
-
-                <div class="overflow-hidden rounded-lg border border-gray-200">
-                    <table class="w-full text-sm text-left">
-                        <thead class="bg-gray-100 text-gray-600 uppercase text-xs">
-                            <tr>
-                                <th class="px-4 py-2">Official Registrations</th>
-                                <th class="px-4 py-2 text-right">Details</th>
-                            </tr>
-                        </thead>
-                        <tbody class="divide-y divide-gray-200 bg-white">
-                            <tr><td class="px-4 py-2">UDYAM REG. NO.</td><td class="px-4 py-2 text-right font-mono">UDYAM-MH-33-0233129</td></tr>
-                            <tr><td class="px-4 py-2">GSTIN</td><td class="px-4 py-2 text-right font-mono">27BFQPS4202E1ZE</td></tr>
-                            <tr><td class="px-4 py-2">PAN NO.</td><td class="px-4 py-2 text-right font-mono">BFQPS4202E</td></tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-
-            <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-100">
-                <h3 class="text-xl font-bold text-gray-900 mb-6 border-b pb-2 border-blue-600 inline-block">REQUEST QUOTE</h3>
-                <form class="space-y-4">
-                    <input type="text" placeholder="FULL NAME" class="w-full p-3 border border-gray-300 rounded-lg">
-                    <input type="email" placeholder="EMAIL ADDRESS" class="w-full p-3 border border-gray-300 rounded-lg">
-                    <textarea placeholder="SPECIFY PRODUCT & QUANTITY..." rows="4" class="w-full p-3 border border-gray-300 rounded-lg"></textarea>
-                    <button class="w-full bg-blue-700 text-white font-bold py-4 rounded-lg hover:bg-blue-800 transition uppercase">Submit Quotation Request</button>
-                </form>
-            </div>
-        </div>
-    </div>
-</section>
+        <p class="text-center mt-10 text-sm">© 2026 AAN TRADERS. All Rights Reserved.</p>
+    </footer>
 
     <script>
-    const btn = document.getElementById('mobile-menu-button');
-    const menu = document.getElementById('mobile-menu');
-    btn.addEventListener('click', () => {
-        menu.classList.toggle('hidden');
-    });
-</script>
+        const btn = document.getElementById('mobile-menu-button');
+        const menu = document.getElementById('mobile-menu');
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
 
 </body>
 </html>
